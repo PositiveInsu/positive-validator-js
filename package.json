@@ -4,7 +4,7 @@
   "description": "Validator with Vanila Javascript",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine" 
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/PositiveInsu/vanila-js-validator/issues"
   },
-  "homepage": "https://github.com/PositiveInsu/vanila-js-validator#readme"
+  "homepage": "https://github.com/PositiveInsu/vanila-js-validator#readme",
+  "devDependencies": {
+    "jasmine": "^4.6.0"
+  }
 }
