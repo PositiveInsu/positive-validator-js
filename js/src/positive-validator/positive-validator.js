@@ -1,18 +1,19 @@
 class Target {
-    /** @property {string} #id */
+    /** @type {string} #id */
     #id = '';
-    /** @property {HTMLInputElement} #inputElement */
+    /** @type {HTMLInputElement} #inputElement */
     #inputElement;
-    /** @property {HTMLElement} #errorMessageElement */
+    /** @type {HTMLElement} #errorMessageElement */
     #errorMessageElement;
-    /** @property {string} #label */
+    /** @type {string} #label */
     #label = '';
-    /** @property {Object[]} #ruleList */
+    /** @type {Object[]} #ruleList */
     #ruleList = [];
-    /** @property {boolean} #checkValidation*/
+    /** @type {boolean} #checkValidation*/
     #checkValidation = true;
 
     /**
+     * @constructor
      * @param {string} elementID
      * @param {HTMLElement} parent
      */
@@ -249,9 +250,9 @@ class Target {
 }
 
 export class PositiveValidator{
-    /** @property {HTMLElement} #scope */
+    /** @type {HTMLElement} #scope */
     #scope;
-    /** @property {Target[]} #targetList */
+    /** @type {Target[]} #targetList */
     #targetList = [];
 
     /**
@@ -259,6 +260,8 @@ export class PositiveValidator{
      */
     constructor(parentID) {
         this.#scope = document.getElementById(parentID);
+        console.log('check the scope!');
+        console.log(this.#scope);
     }
 
     /**

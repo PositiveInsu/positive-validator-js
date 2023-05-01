@@ -1,10 +1,11 @@
 {
   "name": "validator",
   "version": "1.0.0",
-  "description": "Validator with Vanila Javascript",
+  "description": "Validator with Vanilla Javascript",
   "main": "app.js",
+  "type": "module",
   "scripts": {
-    "test": "jasmine" 
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -21,5 +22,8 @@
   "homepage": "https://github.com/PositiveInsu/vanila-js-validator#readme",
   "devDependencies": {
     "jasmine": "^4.6.0"
+  },
+  "dependencies": {
+    "jsdom": "^21.1.1"
   }
 }

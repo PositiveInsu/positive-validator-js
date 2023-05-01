@@ -1,5 +1,11 @@
 import commonFunction from "./positive-common-function";
 
+/**
+ * Managing all rules' error messages in this object.
+ *
+ * @constant
+ * @type {Object<string>}
+ */
 const ruleMessage = {
     REQUIRED: 'The :attribute field is required.',
     LESS_STRING_LENGTH: 'The :attribute must be at least :min characters.',
@@ -44,11 +50,17 @@ const ruleMessage = {
  */
 
 /**
- * Validate input field has value or not.
+ * Validate if input field has the value or not.
  *
  * @returns {{getName: (function(): string), getMessage: (function(string): string), validate: (function(string): boolean)}}
  */
 const required = function(){
+    /**
+     * Name for distinguishing the rule.
+     *
+     * @constant
+     * @type {string}
+     */
     const name = 'required';
 
     /**
